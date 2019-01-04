@@ -4,6 +4,9 @@ set -e
 # Setting up Scylla
 echo "Setting up Scylla"
 printf 'YES\nYES\nYES\nYES\nno\nYES\nno\nYES\nYES\nYES\nYES\n' | sudo scylla_setup
+
+#See the questions and answers below.  They have been consolidated above in the single
+#printf and are piped into the setup command so there is no interruption when the script runs
 #expect "Do you want to run check your kernel version?
 #        Yes - runs a  script to verify that the kernel for this instance qualifies to run Scylla. No - skips the kernel check."
 #send "YES"

@@ -73,9 +73,9 @@ cp /vagrant/setup.sh /home/vagrant
 chown vagrant:vagrant /home/vagrant/setup.sh
 chmod +x /home/vagrant/setup.sh
 
-#cp /vagrant/start.sh /home/vagrant
-#chown vagrant:vagrant /home/vagrant/start.sh
-#chmod +x /home/vagrant/start.sh
+cp /vagrant/start.sh /home/vagrant
+chown vagrant:vagrant /home/vagrant/start.sh
+chmod +x /home/vagrant/start.sh
 
 #cp /vagrant/clean_up.sh /home/vagrant
 #chown vagrant:vagrant /home/vagrant/clean_up.sh

@@ -14,9 +14,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     scylla.vm.network "forwarded_port", guest: 7000, host: 9093
     scylla.vm.network "forwarded_port", guest: 7000, host: 9100
     scylla.vm.provision "shell", path: "vagrant/deb.sh"
-    scylla.vm.provision "shell", path: "setup.sh", run: "always", privileged: false
-    #scylla.vm.provision "shell", path: "start.sh", run: "always", privileged: false
-
+    scylla.vm.provision "shell", path: "setup.sh", privileged: false
+    scylla.vm.provision "shell", path: "start.sh", run: "always", privileged: false
 
   end
 

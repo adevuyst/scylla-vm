@@ -28,3 +28,7 @@ SSH Into your vm
 ```bash
 $ vagrant ssh 
 ```
+Open up the Cassandra Query Language Shell
+```bash
+$ cqlsh 
+```
